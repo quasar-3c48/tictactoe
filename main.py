@@ -1,7 +1,13 @@
-"Main file for orchestration. I did it for orchetration logic between app starting and MVC components"
+import tkinter as tkint
+from views.tkinter_view import TkinterView
+from config import BOARD_SIZE, WIN_LENGTH, validate_config
+from controllers.game_controller import GameController
 
 def main():
-    pass # I'll do it downstream
-
+    validate_config()
+    root = tkint.Tk()
+    controller = GameController(BOARD_SIZE, WIN_LENGTH)
+    TkinterView(root, controller)
+    root.mainloop()
 if __name__ == "__main__":
     main()

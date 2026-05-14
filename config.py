@@ -1,5 +1,5 @@
-BOARD_SIZE = 6
-WIN_LENGTH = 6
+BOARD_SIZE = 3
+WIN_LENGTH = 3
 
 def validate_config():
     """I did that as a kind of error handling funtion. For example, if In the future, I add config parameters, I'll update the logic. But for now I just kept that simple by handling the current params """
