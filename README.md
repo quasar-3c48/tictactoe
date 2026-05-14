@@ -21,7 +21,7 @@ If needed, with local venv:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python main.py
+python3 main.py
 ```
 ## Evolvability
 - The board size `BOARD_SIZE` and the win length `WIN_LENGTH` are configurable in `config.py`
